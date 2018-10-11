@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.tycoding.mapper.SeckillOrderMapper">
+
+    <!-- 插入订单明细。如果主键冲突会直接报错，可使用`ignore`实现主键冲突就直接返回0，表示更新失败 -->
+    <insert id="insertOrder">
+        INSERT ignore INTO seckill_order(seckill_id, money, user_phone)
+        VALUES (#{seckillId}, #{money}, #{userPhone})
+    </insert>
+
+    <!-- 查询订单明细表并得到对应秒杀商品的数据
+        通过`s.xxx "seckill.xxx"`的方式实现将查询到的seckill表中的数据赋值给seckillOrder实体类中的seckill属性上
+
+    -->
+    <select id="findById" resultType="SeckillOrder">
+        SELECT
+          so.seckill_id,
+          so.user_phone,
+          so.money,
+          so.create_time,
+          so.state,
+          s.seckill_id "seckill.seckill_id",
+          s.title "seckill.title",
+          s.cost_price "seckill.cost_price",
+          s.create_time "seckill.create_time",
+          s.start_time "seckill.start_time",
+          s.end_time "seckill.end_time",
+          s.stock_count "seckill.stock_count"
+        FROM seckill_order so
+        INNER JOIN seckill s ON so.seckill_id = s.seckill_id
+        WHERE so.seckill_id = #{seckillId}
+    </select>
+</mapper>
