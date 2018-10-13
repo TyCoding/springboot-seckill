@@ -22,7 +22,7 @@ import java.util.List;
 public interface SeckillService {
 
     /**
-     * 获取所有的秒杀商品列表（包括为符合条件的秒杀商品列表）
+     * 获取所有的秒杀商品列表
      *
      * @return
      */
@@ -42,7 +42,7 @@ public interface SeckillService {
      *
      * @param seckillId
      */
-    Exposer exportSeckillUrl(Long seckillId);
+    Exposer exportSeckillUrl(long seckillId);
 
     /**
      * 执行秒杀的操作

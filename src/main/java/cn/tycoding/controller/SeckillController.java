@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 秒杀商品的控制层（用来做获取数据，不做页面跳转）
+ * 秒杀商品的控制层
  *
  * @auther TyCoding
  * @date 2018/10/6
@@ -35,11 +35,6 @@ public class SeckillController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    /**
-     * 获取符合条件的秒杀商品列表
-     *
-     * @return
-     */
     @RequestMapping("/list")
     public String findSeckillList(Model model) {
         List<Seckill> list = seckillService.findAll();
@@ -47,35 +42,12 @@ public class SeckillController {
         return "page/seckill";
     }
 
-    /**
-     * 获取所有的秒杀商品列表
-     * `
-     *
-     * @return
-     */
-    @ResponseBody
-    @RequestMapping("/findAll")
-    public List<Seckill> findAll() {
-        return seckillService.findAll();
-    }
-
-    /**
-     * 根据ID查询商品信息，从Redis缓存中读取
-     *
-     * @return
-     */
     @ResponseBody
     @RequestMapping("/findById")
     public Seckill findById(@RequestParam("id") Long id) {
         return seckillService.findById(id);
     }
 
-    /**
-     * 跳转到秒杀详情页
-     *
-     * @param seckillId
-     * @return
-     */
     @RequestMapping("/{seckillId}/detail")
     public String detail(@PathVariable("seckillId") Long seckillId, Model model) {
         if (seckillId == null) {

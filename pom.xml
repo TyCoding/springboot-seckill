@@ -76,18 +76,6 @@
             <artifactId>jedis</artifactId>
         </dependency>
 
-        <!-- 序列化插件-protostuff -->
-        <dependency>
-            <groupId>io.protostuff</groupId>
-            <artifactId>protostuff-runtime</artifactId>
-            <version>1.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.protostuff</groupId>
-            <artifactId>protostuff-core</artifactId>
-            <version>1.6.0</version>
-        </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

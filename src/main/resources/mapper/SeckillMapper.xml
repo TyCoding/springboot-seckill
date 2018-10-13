@@ -4,14 +4,6 @@
 
 <mapper namespace="cn.tycoding.mapper.SeckillMapper">
 
-    <!-- 查询符合条件的秒杀商品 -->
-    <select id="findSeckillList" resultType="Seckill">
-        SELECT * FROM seckill WHERE 1=1
-        AND stock_count &gt; 0
-        AND start_time &lt;= #{nowDate}
-        AND end_time &gt;= #{nowDate}
-    </select>
-
     <select id="findAll" resultType="Seckill">
         SELECT * FROM seckill
     </select>

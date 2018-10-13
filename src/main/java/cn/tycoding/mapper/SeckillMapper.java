@@ -15,18 +15,7 @@ import java.util.List;
 public interface SeckillMapper {
 
     /**
-     * 查询符合条件的秒杀商品ID
-     *
-     * @param nowTime 封装的秒杀条件，如：
-     *                1.商品开始秒杀的时间要小于当前时间；
-     *                2.商品结束秒杀的时间要大于当前时间；
-     *                3.商品的库存数量要>0。只有符合了这些条件，才应该被查询出来
-     * @return
-     */
-    List<Seckill> findSeckillList(String nowTime);
-
-    /**
-     * 查询所有秒杀商品的记录信息（包括不符合秒杀条件的）
+     * 查询所有秒杀商品的记录信息
      *
      * @return
      */
@@ -42,7 +31,7 @@ public interface SeckillMapper {
 
     /**
      * 减库存。
-     * 对于Mapper映射接口方法中存在多个参数的要加@Param()注解标识字段名称，不然Mabatis不能识别出来哪个字段相互对应
+     * 对于Mapper映射接口方法中存在多个参数的要加@Param()注解标识字段名称，不然Mybatis不能识别出来哪个字段相互对应
      *
      * @param seckillId 秒杀商品ID
      * @param killTime  秒杀时间

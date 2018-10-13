@@ -12,7 +12,6 @@
 
     <!-- 查询订单明细表并得到对应秒杀商品的数据
         通过`s.xxx "seckill.xxx"`的方式实现将查询到的seckill表中的数据赋值给seckillOrder实体类中的seckill属性上
-
     -->
     <select id="findById" resultType="SeckillOrder">
         SELECT

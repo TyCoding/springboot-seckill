@@ -22,14 +22,4 @@ public class BaseController {
         return "redirect:/seckill/list";
     }
 
-    /**
-     * 跳转到商品列表页面
-     *
-     * @return
-     */
-    @RequestMapping("/seckill/goods")
-    public String goods() {
-        return "page/goods";
-    }
-
 }

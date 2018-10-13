@@ -70,7 +70,7 @@ public class SeckillServiceImpl implements SeckillService {
     }
 
     @Override
-    public Exposer exportSeckillUrl(Long seckillId) {
+    public Exposer exportSeckillUrl(long seckillId) {
         Seckill seckill = (Seckill) redisTemplate.boundHashOps(key).get(seckillId);
         if (seckill == null) {
             //说明redis缓存中没有此key对应的value
