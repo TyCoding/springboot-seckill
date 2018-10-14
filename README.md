@@ -22,7 +22,7 @@
 
 **写在前面**
 
-SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用Spring的方式，所以本质上和SSM框架差别不大，所以学习此项目不仅可以学习到秒杀系统的设计流程还能很好的联系一下SpringBoot框架。当然如果你对SpringBoot框架不是很熟悉的话，我推荐你你看一下：
+SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用Spring的方式，所以本质上和SSM框架差别不大，所以学习此项目不仅可以学习到秒杀系统的设计流程还能很好的练习一下SpringBoot框架。当然如果你对SpringBoot框架不是很熟悉的话，我推荐你你看一下：
 
 * [SpringBoot入门之工程搭建（IDEA版）](http://tycoding.cn/2018/09/28/spring-boot/)
 * [SpringBoot整合mybatis实现CRUD业务](http://tycoding.cn/2018/09/30/springboot-mybatis/)
