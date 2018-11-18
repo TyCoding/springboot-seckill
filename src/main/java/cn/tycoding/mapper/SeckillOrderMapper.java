@@ -29,5 +29,5 @@ public interface SeckillOrderMapper {
      * @param seckillId
      * @return
      */
-    SeckillOrder findById(long seckillId);
+    SeckillOrder findById(long seckillId, long userPhone);
 }

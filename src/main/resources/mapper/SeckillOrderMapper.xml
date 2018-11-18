@@ -29,6 +29,6 @@
           s.stock_count "seckill.stock_count"
         FROM seckill_order so
         INNER JOIN seckill s ON so.seckill_id = s.seckill_id
-        WHERE so.seckill_id = #{seckillId}
+        WHERE so.seckill_id = #{seckillId} AND so.user_phone = #{userPhone}
     </select>
 </mapper>

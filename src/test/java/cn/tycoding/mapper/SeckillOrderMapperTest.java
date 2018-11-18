@@ -28,7 +28,7 @@ public class SeckillOrderMapperTest {
 
     @Test
     public void findById() {
-        SeckillOrder seckillOrder = seckillOrderMapper.findById(1l);
+        SeckillOrder seckillOrder = seckillOrderMapper.findById(1l, 1278177);
         System.out.println(seckillOrder.getSeckillId() + ": " + seckillOrder.getSeckill().getTitle());
     }
 }

@@ -140,7 +140,7 @@ public class SeckillServiceImpl implements SeckillService {
                     throw new SeckillCloseException("seckill is closed");
                 } else {
                     //秒杀成功
-                    SeckillOrder seckillOrder = seckillOrderMapper.findById(seckillId);
+                    SeckillOrder seckillOrder = seckillOrderMapper.findById(seckillId, userPhone);
 
                     //更新缓存（更新库存数量）
                     Seckill seckill = (Seckill) redisTemplate.boundHashOps(key).get(seckillId);
