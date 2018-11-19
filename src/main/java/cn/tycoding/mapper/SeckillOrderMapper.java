@@ -27,7 +27,8 @@ public interface SeckillOrderMapper {
      * 根据秒杀商品ID查询订单明细数据并得到对应秒杀商品的数据，因为我们再SeckillOrder中已经定义了一个Seckill的属性
      *
      * @param seckillId
+     * @param userPhone
      * @return
      */
-    SeckillOrder findById(long seckillId, long userPhone);
+    SeckillOrder findById(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
 }
