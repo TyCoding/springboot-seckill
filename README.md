@@ -24,8 +24,8 @@
 
 SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用Spring的方式，所以本质上和SSM框架差别不大，所以学习此项目不仅可以学习到秒杀系统的设计流程还能很好的练习一下SpringBoot框架。当然如果你对SpringBoot框架不是很熟悉的话，我推荐你你看一下：
 
-* [SpringBoot入门之工程搭建（IDEA版）](http://tycoding.cn/2018/09/28/spring-boot/)
-* [SpringBoot整合mybatis实现CRUD业务](http://tycoding.cn/2018/09/30/springboot-mybatis/)
+* [SpringBoot入门之工程搭建（IDEA版）](http://tycoding.cn/2018/09/28/boot/spring-boot/)
+* [SpringBoot整合mybatis实现CRUD业务](http://tycoding.cn/2018/09/30/boot/springboot-mybatis/)
 
 欢迎star(#^.^#)
 
@@ -72,13 +72,13 @@ SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用S
 
 本项目一共分为四个模块来讲解，具体的开发教程请看我的博客文章：
 
-* [SpringBoot实现Java高并发秒杀系统之DAO层开发（一）](http://tycoding.cn/2018/10/12/seckill-dao/)
+* [SpringBoot实现Java高并发秒杀系统之DAO层开发（一）](http://tycoding.cn/2018/10/12/ssm/seckill-dao/)
 
-* [SpringBoot实现Java高并发秒杀系统之Service层开发（二）](http://tycoding.cn/2018/10/13/seckill-service/)
+* [SpringBoot实现Java高并发秒杀系统之Service层开发（二）](http://tycoding.cn/2018/10/13/ssm/seckill-service/)
 
-* [SpringBoot实现Java高并发秒杀系统之Web层开发（三）](http://tycoding.cn/2018/10/14/seckill-web/)
+* [SpringBoot实现Java高并发秒杀系统之Web层开发（三）](http://tycoding.cn/2018/10/14/ssm/seckill-web/)
 
-* [SpringBoot实现Java高并发秒杀系统之并发优化（四）](http://tycoding.cn/2018/10/15/seckill/)
+* [SpringBoot实现Java高并发秒杀系统之并发优化（四）](http://tycoding.cn/2018/10/15/ssm/seckill/)
 
 
 
